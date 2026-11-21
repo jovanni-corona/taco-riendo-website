@@ -57,3 +57,44 @@ h3 {
 a {
     color: var(--dark-teal);
 }
+/* ===== Navigation ===== */
+header {
+    /* ===== Awning effect ===== */
+    background: repeating-linear-gradient(
+        90deg,
+        var(--dark-teal) 0px,
+        var(--dark-teal) 12px,
+        #116680 12px,
+        #116680 24px
+    );
+}
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-lg);
+}
+nav img {
+    height: 56px;
+    width: auto;
+}
+nav ul {
+    display: flex;
+    gap: var(--space-md);
+    list-style: none;
+}
+nav a {
+    color: var(--old-lace);
+    font-weight: 700;
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-sm);
+}
+nav a:hover {
+    color: var(--honey-bronze);
+}
+nav a:focus {
+    outline: 3px solid var(--honey-bronze);
+    outline-offset: 2px;
+}
