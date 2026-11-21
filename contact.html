@@ -73,7 +73,7 @@
                     <input type="date" id="event-date" name="event-date" required>
                     <label for="guests">Number of Guests</label>
                     <input type="number" id="guests" name="guests" required>
-                    <button type="submit">Send Request</button>
+                    <button type="submit" class="btn btn-primary">Send Request</button>
                 </fieldset>
             </form>
         </section>
@@ -81,14 +81,35 @@
 
     <!-- Footer -->
     <footer>
-        <p>235 W Inyo Ave, Tulare, CA 93274</p>
-        <p><a href="tel:5596868226">(559) 686-8226</a> </p>
-        <p>Monday-Sunday: 8:00AM-9:00PM</p>
-        <ul>
-            <li><a href="https://www.facebook.com/tacoriendo.tulare/">Facebook</a></li>
-            <li><a href="https://www.yelp.com/biz/taco-riendo-tulare">Yelp</a></li>
-        </ul>
-        <p>&copy; 2026 Taco Riendo</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="images/logo-light.svg" alt="Taco Riendo" class="footer-logo">
+                <p>Tulare's neighborhood taquería. Catering available for parties and events.</p>
+            </div>
+            <div class="footer-col">
+                <h2>Visit Us</h2>
+                <address>235 W Inyo Ave<br>Tulare, CA 93274</address>
+                <p>Monday-Sunday: 8:00AM-9:00PM</p>
+            </div>
+            <div class="footer-col">
+                <h2>Contact</h2>
+                <p><a href="tel:5596868226">(559) 686-8226</a> </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/tacoriendo.tulare/">Facebook</a></li>
+                    <li><a href="https://www.yelp.com/biz/taco-riendo-tulare">Yelp</a></li>
+                </ul>
+            </div>
+            <nav class="footer-col" aria-label="Footer Navigation">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 Taco Riendo</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
