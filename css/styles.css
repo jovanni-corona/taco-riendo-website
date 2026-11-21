@@ -1,0 +1,59 @@
+/* ===== Style Guide Variables =====*/
+:root {
+    /* Colors */
+    --crushed-berry: #861D1D;
+    --dark-teal: #0D5971;
+    --honey-bronze: #E8A33D;
+    --old-lace: #F7F1E3;
+    --carbon-black: #222222;
+
+    /* Fonts */
+    --font-heading: 'Rye', serif;
+    --font-body: 'Nunito', sans-serif;
+    
+    /* Spacing (8-point grid) */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+}
+/* ===== Base Styles =====*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--old-lace);
+    color: var(--carbon-black);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== Typography ===== */
+h1, h2 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: var(--crushed-berry);
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+a {
+    color: var(--dark-teal);
+}
