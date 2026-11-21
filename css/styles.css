@@ -189,7 +189,7 @@ footer address {
     margin-top: var(--space-lg);
 }
 /* ===== Page Headers ===== */
-#page-header {
+#page-header, #hero {
     position: relative;
     max-width: 1200px;
     margin: var(--space-lg) auto;
@@ -234,4 +234,37 @@ footer address {
     position: relative;
     z-index: 2;
     color: var(--old-lace);
+}
+/* ===== Homepage Hero ===== */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+#hero img {
+    width: 180px;
+}
+#hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+}
+.hero-text p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-teal);
+    margin: var(--space-xs) 0 var(--space-md);
+}
+@media (min-width: 768px) {
+    #hero {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+    #hero img {
+        width: 240px;
+    }
+    #hero h1 {
+        font-size: 72px;
+    }
 }
