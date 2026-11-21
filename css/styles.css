@@ -7,6 +7,7 @@
     --old-lace: #F7F1E3;
     --carbon-black: #222222;
     --crushed-berry-dark: #6B1717;
+    --old-lace-dark: #ede6d6;
 
     /* Fonts */
     --font-heading: 'Rye', serif;
@@ -186,4 +187,51 @@ footer address {
     text-align: center;
     font-size: 14px;
     margin-top: var(--space-lg);
+}
+/* ===== Page Headers ===== */
+#page-header {
+    position: relative;
+    max-width: 1200px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+    border: 10px solid var(--dark-teal);
+    border-radius: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--old-lace) 0px,
+        var(--old-lace) 20px,
+        var(--old-lace-dark) 20px,
+        var(--old-lace-dark) 40px
+    );
+}
+.photo-header {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.photo-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.photo-header h1 {
+    position: relative;
+    z-index: 2;
+    color: var(--old-lace);
 }
