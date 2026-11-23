@@ -444,4 +444,53 @@ address {
     gap: var(--space-sm);
     margin: 0 0 var(--space-xl);
 }
-    
+#contact-info {
+    text-align: center;
+}
+#contact-info ul {
+    list-style: none;
+}
+#contact-info h3 {
+    color: var(--dark-teal);
+    margin-top: var(--space-sm);
+}
+#map {
+    text-align: center;
+}
+#map iframe {
+    margin-top: var(--space-sm);
+    aspect-ratio: 16/9;
+    height: auto;
+}
+#catering h2 {
+    text-align: center;
+}
+#catering form {
+    max-width: 700px;
+    margin: var(--space-sm) auto 0;
+}
+#catering label {
+    display: block;
+}
+#catering input {
+    margin-bottom: var(--space-sm);
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 16px;
+    padding: 12px var(--space-md);
+    border-radius: 6px;
+    border: 2px solid var(--dark-teal);
+    min-height: 44px;
+}
+#catering input:focus {
+    outline: 3px solid var(--honey-bronze);
+    outline-offset: 2px;
+}
+#catering fieldset {
+    border: none;
+}
+#catering legend {
+    color: var(--dark-teal);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
